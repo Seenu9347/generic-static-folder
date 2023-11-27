@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Table</title>
+</head>
+<style>
+	img
+	{
+		width: 50px;
+	}
+</style>
+<body>
+	<h1><u>Table Information:-</u></h1>
+	<table border="2px"> 
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+				<th>desg</th>
+				<th>img</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Ram charan</td>
+				<td>35</td>
+				<td>actor</td>
+				<td><img src="{% static 'images/ram1.jpeg' %}"></td>
+			</tr>
+			<tr>
+				<td>Ntr</td>
+				<td>38</td>
+				<td>Hero</td>
+				<td><img src="{% static 'images/ntr1.jpg' %}"></td>
+			</tr>
+			<tr>
+				<td>kalyani priyadarshan</td>
+				<td>30</td>
+				<td>Heroine</td>
+				<td><img src="{% static 'images/kp1.jpg' %}"></td>
+			</tr>
+			<tr>
+				<td>rashmika mandanna</td>
+				<td>31</td>
+				<td>heroine</td>
+				<td><img src="{% static 'images/rm1.jpg' %}"></td>
+			</tr>
+		</tbody>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Css Positions</title>
+	<style>
+		*
+		{
+			margin: 0px;
+		}
+		div
+		{
+			box-shadow: 0 0 10px block;
+			width: 450px;
+			height: 320px;
+			margin: 100px auto;
+			border-radius: 10px;
+			position: relative;
+		}
+		div>img
+		{
+			width: inherit;
+			height: inherit;
+			border-radius: inherit;
+		}
+		div>#content
+		{
+			background-color: rgba(0, 0, 0, 0.2);
+			color: white;
+			/*padding: 5px;*/
+			text-align: center;
+			position: absolute;
+			margin: 0px;
+			top: 0px;
+			left: 0px;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="parent">
+		<img src="{% static 'images/ram2.webp' %}" alt="Image Not Found">
+		<div id="content">
+			<h2>Ram charan:-</h2>
+			<p>RC, Also Known As ram charan, Is An Indian Actor, Singer, And Dancer Who Primarily Works In Telugu Cinema. He Is The Grandson Of The Legendary Telugu Actor And Politician ramcharan. ramcharan Made His Acting Debut In 2001 With The Film Ninnu Choodalani. He Is One Of The Most Popular And Highest-Paid Actors In The Telugu Film Industry.</p>
+		</div>
+	</div>
+
+</body>
+</html>
